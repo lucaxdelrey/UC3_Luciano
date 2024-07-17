@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de Página HTML com Colunas Laterais</title>
+	<style>
+		body {
+			margin: 0; /* Remove margens padrão do corpo da página */
+			padding: 0; /* Remove padding padrão do corpo da página */
+			font-family: Arial, sans-serif; /* Define a família de fontes para Arial ou fontes genéricas sans-serif */
+		}
+		header, footer {
+			background-color: #333; /* Cor de fundo dos elementos header e footer */
+			color: #fff; /* Cor do texto nos elementos header e footer */
+			padding: 15px; /* Espaçamento interno nos elementos header e footer */
+			text-align: center; /* Alinhamento centralizado do texto nos elementos header e footer */
+		}
+		#container {
+			display: flex; /* Container principal utiliza Flexbox para organização dos itens filhos */
+			flex-wrap: wrap; /* Permite que os itens filhos quebrem para a linha seguinte se não couberem na mesma linha */
+			margin: 0; /* Remove margens padrão do container */
+			padding: 0; /* Remove padding padrão do container */
+		}
+		#lado_esquerdo, #lado_direito {
+			background-color: #eee; /* Cor de fundo dos elementos #lado_esquerdo e #lado_direito */
+			padding: 20px; /* Espaçamento interno de 20 pixels nos elementos #lado_esquerdo e #lado_direito */
+			flex-basis: 20%; /* Define a largura base dos elementos como 20% do espaço disponível */
+			box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total do elemento */
+			text-align:  justify;
+			}
+		#content {
+			background-color: #fff; /* Cor de fundo do elemento #content */
+			padding: 150px; /* Espaçamento interno de 30 pixels no elemento #content */
+			flex-basis: 60%; /* Define a largura base do elemento como 60% do espaço disponível */
+			box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total do elemento */
+			text-align:  justify;
+		}
+		.image {
+			display: block; /* Define a imagem como bloco para que ela ocupe toda a largura disponível */
+			margin: 20px auto; /* Margem de 20 pixels em cima e embaixo, e centraliza horizontalmente com auto nas laterais */
+			max-width: 100%; /* Define a largura máxima da imagem como 100% do elemento pai */
+			height: auto; /* Mantém a proporção da altura da imagem em relação à largura */
+		}
+	</style>
+	
+</head>
+<body>
+    <header>
+        <h1>História da Inteligência Artificial</h1>
+    </header>
+    
+    <div id="container">
+        <div id="lado_esquerdo">
+            <h2>Pré-história da IA</h2>
+            <p>A ideia de criar máquinas que possam realizar tarefas que exigem inteligência humana remonta aos tempos antigos, com mitos e histórias de autômatos e autômatos mecânicos.</p>
+        </div>
+        
+        <div id="content">
+            <img class="image" src="https://example.com/imagem1.jpg" alt="Imagem 1">
+            <h2>Desenvolvimento da Inteligência Artificial</h2>
+            <p>No século XX, cientistas como Alan Turing começaram a explorar formalmente a ideia de máquinas que poderiam pensar. A criação do teste de Turing e o desenvolvimento de algoritmos marcam o início da era moderna da IA.</p>
+            <img class="image" src="https://example.com/imagem2.jpg" alt="Imagem 2">
+            <p>A partir dos anos 1950, com o surgimento de computadores mais poderosos, novas teorias e abordagens para a IA, como redes neurais artificiais e aprendizado de máquina, começaram a ser desenvolvidas.</p>
+        </div>
+        
+        <div id="lado_direito">
+            <h2>Futuro da Inteligência Artificial</h2>
+            <p>A IA continua a evoluir rapidamente, com aplicações em diversas áreas como saúde, transporte, e-commerce e muito mais. O debate sobre ética e segurança também se intensifica à medida que a tecnologia avança.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Exemplo de Página HTML com Colunas Laterais</p>
+    </footer>
+</body>
+</html>
